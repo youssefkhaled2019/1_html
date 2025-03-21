@@ -1,0 +1,270 @@
+--------------------------[h]----------------------------
+<h1 hidden  contenteditable  >
+--------------------------[p]----------------------------
+
+<p  hidden  contenteditable >     
+--------------------------[a]----------------------------
+<a href="" target="_self"> </a>
+        href=["mailto:","tel:+"]
+        target=["_blank","_self",,,]
+        title=""
+------------------------[image]------------------------------
+<img
+      src="src/img_girl.jpg"
+      width="500"
+      height="600"
+      alt="Girl with a jacket"
+      decoding="async"            ????
+    />
+------------------------------------------------------
+
+
+------------------------[list]------------------------------
+
+
+<ul style="list-style-type: disc">            
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+                                        list-style-type:[ disc (default),circle,square, none]
+
+
+<ol type="A"  start="23">   
+      <li value="2">xxss</li>
+      <li>dsdsdsd</li>
+</ol>
+                                      type="1" ,"A","a","I","i",
+                                       ,reversed, start="23" ,value="2"
+
+
+
+  <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+</dl>                                       
+
+---------------------------[table]---------------------------
+
+
+ border-style: dotted;[dotted,dashed,solid,double,groove,ridge,inset,outset,none,hidden]
+
+
+<table>
+    <caption></caption>
+    <thead>
+       <tr>
+        <th>rtrt</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>rtrt</td>
+    </tr>
+    <tr colspan>
+        <td>trt</td>
+    </tr>
+    <tr>
+        <td>trtrt</td>
+    </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+                                       colspan,rowspan
+------------------------------------------------------
+    <!--b => Bold
+    strong => Bold => Important Text
+    i => Italic
+    em => Emphasized
+    mark => Marked Text Or Highlighted Text
+    u => Underline
+    small => Smaller text
+    del => Deleted Text
+    ins => Inserted Text
+    sub => Subscript
+    sup => Superscript
+   -->
+    <h1>Book Store</h1>
+    <p>This Is My <b>Book Store</b>, Welcome</p>
+    <p>This Is My <strong>Book Store</strong>, Welcome</p>
+    <p>This Is My <i>Book Store</i>, Welcome</p>
+    <p>This Is My <em>Book Store</em>, Welcome</p>
+    <p>This Is My Book Store, <mark>Welcome</mark></p>
+    <p>This Is My Book Store, <u>Welcome</u></p>
+    <p>This Is My Book Store, <small>Welcome</small></p>
+    <p>This Is My <del>Book Store</del>, Welcome</p>
+    <p><del>$100</del> $80</p>
+    <p>This Is My <ins>Book Store</ins>, Welcome</p>
+    <p>h<sub>2</sub>o</p>
+    <p>2<sup>2</sup></p>
+
+--------------------------[entetys list]----------------------------
+<p>&gt;</p> <!-- entetys list-->
+
+----------------------[audio]--------------------------------
+
+
+<audio src=""></audio>
+
+<audio controls autoplay loop muted>
+  <source src="" type="audio/mpeg" />
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types -->
+  your browser does not spport audio
+</audio>
+------------------------[video]------------------------------
+    <video src=""></video>
+
+    <video controls autoplay loop muted preload poster="" width="" height="">
+      <source src="" type="video/mp4" />
+      your browser does not spport video
+      <!-- subtitle -->
+      <track
+        src="subtitle_en.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="english"
+      />
+      <track
+        src="subtitle_ar.vtt"
+        kind="metadata"
+        srclang="ar"
+        label="arabic"
+      />
+      <!--   kind=[subtitles,captions,descriptions,metadata,...]   -->
+    </video>
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+    <input type="date" id="birthday" name="birthday"><br>          <!-- min="2000-01-02" ,  max="1979-12-31"-->
+  <input type="number" id="quantity" name="quantity" min="1" max="5" step="3" size=4>
+   <input type="file" id="files" name="files" multiple>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4" autofocus  disabled required  readonly pattern="[A-Za-z]{3}">
+   <!-- disabled =The value of a disabled input field will not be sent when submitting the form!
+                                                                                                ,readonly =The value of a read-only input field will be sent when submitting the form!
+                                                                                                size="50" -->
+------------------------------------------------------
+
+Input Restrictions
+checked 	Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+maxlength 	Specifies the maximum number of character for an input field   #  <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+================================================================================
+checked 
+disabled 	                         #  <input type="text" id="fname" name="fname" value="John" disabled><br>
+max 	    
+maxlength 	                        #  <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+min 	                             #  <input type="number" id="quantity" name="quantity" min="1" max="5">
+pattern 	
+readonly 	                         #  <input type="text" id="fname" name="fname" value="John" readonly><br>
+required 	                         #  <input type="text" id="username" name="username" required>
+size 	                             #  <input type="text" id="fname" name="fname" size="50"><br>
+step 	    
+value 	                                 #  <input type="text" id="fname" name="fname" value="John"><br>
+autofocus                                    #  <input type="text" id="fname" name="fname" autofocus><br>
+autocomplete                                #  <form action="/action_page.php" autocomplete="on">
+novalidate                                 <form action="/action_page.php" novalidate>
+enctype="multipart/form-data"
+formnovalidate                             <input type="submit" formnovalidate="formnovalidate"  value="Submit without validation">
+multiple                                      <select id="cars" name="cars" size="3" multiple>
+                                              <input type="file" id="myfile" name="myfile" multiple />
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
