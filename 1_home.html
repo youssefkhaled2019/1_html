@@ -15,6 +15,9 @@
     <!-- <link rel="icon" type="image/x-icon" href="/src/favicon.ico"> -->
     <!-- www.favicon.cc -->
 
+    <!-- ----------------[base]----------------------------  -->
+    <!-- <base href="https://www.w3schools.com/" target="_blank" /> -->
+
     <style>
       span.center {
         text-align: center;
@@ -267,6 +270,26 @@ CSS can be added to HTML documents in 3 ways:
     <a href="#C4">Jump to Chapter 4</a>
     <a href="html_demo.html#C4">Jump to Chapter 4</a>
 
+    <!-- -------------------[base]-------------------------  -->
+    <!-- 
+
+-The <base> element specifies the base URL and/or target for all relative URLs in a page.
+-The <base> tag must have either an href or a target attribute present, or both.
+-There can only be one single <base> element in a document!
+ 
+-->
+
+    <!-- 
+<head>
+<base href="https://www.w3schools.com/" target="_blank">
+</head>
+
+<body>
+<img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+<a href="tags/tag_base.asp">HTML base Tag</a>
+</body>
+
+-->
     <!-- -------------------[Button ]-------------------------  -->
     <br />
     <span class="center"><p>8-[Button ]</p></span>
@@ -519,6 +542,22 @@ CSS can be added to HTML documents in 3 ways:
       
     </video> -->
     <!--   kind=[subtitles,captions,descriptions,metadata,...]   -->
+
+    <!-- ------------------------------ -->
+    <div class="vidcontainer">
+      <!-- <select class='qualitypick' autocomplete='off'>
+        <option selected>fullHD</option>
+        <option>720p</option>
+        <option>360p</option>
+     </select> -->
+      <video controls preload>
+        <source label="fullHD" src="http://v.com/lorem.mp4" type="video/mp4" />
+        <source label="720p" src="http://v.com/ipsum.mp4" type="video/mp4" />
+        <source label="360p" src="http://v.com/dolor.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!-- ------------------------------ -->
+
     <!-- -------------------[js]-------------------------  -->
     <br />
     <span class="center"><p>15-[js]</p></span>
@@ -593,22 +632,21 @@ CSS can be added to HTML documents in 3 ways:
       <a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a>
     </p>
 
+    <!-- -------------------[Entities-Symbols-emojis]-------------------------  -->
+    <br />
+    <span class="center"><p>17-[Entities-Symbols-emojis]</p></span>
+    <hr />
 
-     <!-- -------------------[Entities-Symbols-emojis]-------------------------  -->
-     <br />
-     <span class="center"><p>17-[Entities-Symbols-emojis]</p></span>
-     <hr />
-     
-<!-- 
+    <!-- 
     
     < (less than) = &lt;
     > (greater than) = &gt;
   -->
-  <p>I will display &euro;</p>
-  <p>I will display &#8364;</p>
-  <p>I will display &#x20AC;</p> 
-  <p>https://www.w3schools.com/charsets/ref_utf_arrows.asp</p>
-  <p>https://www.w3schools.com/html/html_entities.asp</p>
-  <p>https://www.w3schools.com/html/html_emojis.asp</p>
+    <p>I will display &euro;</p>
+    <p>I will display &#8364;</p>
+    <p>I will display &#x20AC;</p>
+    <p>https://www.w3schools.com/charsets/ref_utf_arrows.asp</p>
+    <p>https://www.w3schools.com/html/html_entities.asp</p>
+    <p>https://www.w3schools.com/html/html_emojis.asp</p>
   </body>
 </html>
