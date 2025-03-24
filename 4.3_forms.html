@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ----------[id="form1"-form="form1"]-------- -->
+
+    <form action="/action_page.php" id="form1">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      The "Last name" field below is outside the form element, but still part of
+      the form.
+    </p>
+
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" form="form1" />
+
+    <!-- --------[      formaction="/action_page2.php"]---------- -->
+    <!-- 
+    The input formaction attribute specifies the URL of the file that will process the input when the form is submitted.
+    Note: This attribute overrides the action attribute of the <form> element.
+    The formaction attribute works with the following input types: submit and image. -->
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input
+        type="submit"
+        formaction="/action_page2.php"
+        value="Submit as Admin"
+      />
+      <!-- <----------------- -->
+    </form>
+    <!-- ---------[  formenctype="multipart/form-data"]--------- -->
+
+    <form action="/action_page_binary.asp" method="post">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input
+        type="submit"
+        formenctype="multipart/form-data"
+        value="Submit as Multipart/form-data"
+      />
+    </form>
+    <!-- ----------[ formmethod="post]-------- -->
+    <form action="/action_page.php" method="get">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit using GET" />
+      <input type="submit" formmethod="post" value="Submit using POST" />
+    </form>
+    <!-- ---------[formtarget="_blank"]--------- -->
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+      <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+    </form> 
+        <!-- ---------[formnovalidate="formnovalidate"]--------- -->
+        <form action="/action_page.php">
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <input type="submit" value="Submit">
+          <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+        </form>
+        
+  </body>
+</html>
