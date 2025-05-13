@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Using The id Attribute in JavaScript</h2>
+    <p>
+      JavaScript can access an element with a specified id by using the
+      getElementById() method:
+    </p>
+    <!-- /* ok */ -->
+    <h1 id="myHeader">Hello World!</h1>
+
+    <input type="text" id="xx" value="fffff" />
+    <button onclick="displayResult(document.getElementById('xx').value)">
+      Change text
+    </button>
+    <!-- ------------------------------------- -->
+    <!-- <button onclick="displayResult(this.innerHTML)">Change text</button> -->
+
+    <script>
+      function displayResult(x) {
+        document.getElementById("myHeader").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>

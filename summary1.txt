@@ -1,0 +1,326 @@
+
+===============================================
+color:[powderblue,tomato,darkolivegreen,Orange,DodgerBlue,MediumSeaGreen,Gray,SlateBlue,Violet,LightGray]
+
+font-size:160%
+"border-collapse: collapse;"
+
+display: grid;
+grid-template-columns: 33% 33% 33%;
+=============================================
+<!-- Write your comments here --> 
+
+=============================================
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Free Web tutorials">
+<meta name="author" content="John Doe">
+<meta http-equiv="refresh" content="30">
+=============================================
+html 
+    -lang="en" | "en-US"
+
+h1
+    - style="font-size:60px;"
+    -id="C4"
+    -hidden  
+    -contenteditable 
+p
+    -style="color:red;
+    -title="I'm a tooltip"
+    -hidden  
+    -contenteditable 
+
+img 
+    -src="w3schools.jpg"
+    -alt="W3Schools.com"
+    -width="104" 
+    -height="142"
+    - decoding="async"            ????
+    -loading=["lazy","eager"]  #This will defer loading of the content until the element reaches a calculated distance from the viewport (that just means, it's got quite likely that the user will scroll it into view).
+
+a 
+    -href="https://www.w3schools.com" |"mailto:someone@example.com" |"tel:+"
+    -title="Go to W3Schools HTML section"
+    -target =_self - Default. Opens the document in the same window/tab as it was clicked
+             _blank - Opens the document in a new window or tab
+             _parent - Opens the document in the parent frame
+             _top - Opens the document in the full body of the window
+
+div 
+    -style="background-color:black;color:white;padding:20px;"
+
+span 
+    -style="color:blue;font-weight:bold;"
+
+button 
+    -onclick="document.location='default.asp'"
+
+link 
+    -rel="stylesheet" 
+    -href="styles.css"
+    -type="image/x-icon"                                <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    -rel="icon"
+pre
+hr
+br
+
+b - Bold text
+strong - Important text   #    strong => Bold => Important Text
+i - Italic text
+em - Emphasized text    #i==em
+mark - Marked text
+small - Smaller text
+del - Deleted text
+ins - Inserted text
+sub - Subscript text
+sup - Superscript text
+u -
+https://www.w3schools.com/html/html_quotation_elements.asp
+
+https://www.w3schools.com/html/html_colors.asp
+https://www.w3schools.com/html/html_images.asp
+https://www.w3schools.com/html/html_table_borders.asp  #table
+https://www.w3schools.com/html/html_table_colgroup.asp  #table
+https://www.w3schools.com/html/html_div.asp                   <----start
+---------------------------table-------------------------
+table
+*caption
+*thead
+ *tr
+   *th
+*tbody   
+ *tr
+    *td
+*tfoot
+
+table
+ -style="width:100%"
+ - border-style: dotted;[dotted,dashed,solid,double,groove,ridge,inset,outset,none,hidden]
+
+ *tr
+   - style="height:200px"
+   *th
+    -style="width:70%"
+    -colspan="2"
+    -rowspan="2"
+ *tr
+    *td
+----------------------------------------------------------
+ul
+ *li
+
+ol
+ *li
+
+dl
+ *dt
+  *dd
+
+ul
+ -style="list-style-type:disc;" [ disc (default),circle,square, none]
+ *li
+
+ol
+ -type="1" ["A","a","I","i",,]
+ -start="50"
+ -reversed
+ *li
+   -value="2"
+----------------------------------------------------
+iframe 
+ -src="url"
+ -title="description"
+ -height="200"
+ -width="300" 
+ -style="height:200px;width:300px;" 
+ ----------------------------------------------------
+ q
+ The HTML <q> tag defines a short quotation.
+
+abbr
+The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+
+address
+The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+----------------------------------------------------
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file
+
+--------------------------------
+td:nth-child(even), th:nth-child(even)
+--------------------------------------------
+Block-level Elements
+    <address>
+    <article>
+    <aside>
+    <blockquote>
+    <canvas>
+    <dd>
+    <div>
+    <dl>
+    <dt>
+    <fieldset>
+    <figcaption>
+    <figure>
+    <footer>
+    <form>
+    <h1>-<h6>
+    <header>
+    <hr>
+    <li>
+    <main>
+    <nav>
+    <noscript>
+    <ol>
+    <p>
+    <pre>
+    <section>
+    <table>
+    <tfoot>
+    <ul>
+    <video>
+Inline Elements
+    <a>
+    <abbr>
+    <acronym>
+    <b>
+    <bdo>
+    <big>
+    <br>
+    <button>
+    <cite>
+    <code>
+    <dfn>
+    <em>
+    <i>
+    <img>
+    <input>
+    <kbd>
+    <label>
+    <map>
+    <object>
+    <output>
+    <q>
+    <samp>
+    <script>
+    <select>
+    <small>
+    <span>
+    <strong>
+    <sub>
+    <sup>
+    <textarea>
+    <time>
+    <tt>
+    <var>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 2px solid powderblue;
+  padding: 20px;
+}
+div
+{
+background-color:black;
+width:100%;
+height:5px;
+opacity :.2;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<div> </div>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<div> </div>
+</body>
+</html>
+/////////////////////////////////////////
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="background-color:#eee;color:black;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div> 
+
+</body>
+</html>
+/////////////////////////////////////////
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+</style>
+</head>
+<body>
+
+<h2>The id Attribute</h2>
+<p>Use CSS to style an element with the id "myHeader":</p>
+
+<h1 id="myHeader">My Header</h1>
+
+</body>
+</html>
+===========================
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "yellow";       
+===========================
+    // let prev = myReferenceDiv.previousElementSibling;
+      // let next = myReferenceDiv.nextElementSibling;
+        x = document.getElementById("h11").nextElementSibling;
+        if (x.style.display == "block") x.style.display = "none";
+===========================
+document.getElementById('demo').innerHTML = Date()
+===========================
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+  }
+  <button type="button" onclick="light(1)">Light On</button>
