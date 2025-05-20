@@ -220,18 +220,114 @@ Inline Elements
 
 
 
+------------------------------------------------------------
+Notes on GET:
+
+    Appends the form data to the URL, in name/value pairs
+    NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+    The length of a URL is limited (2048 characters)
+    Useful for form submissions where a user wants to bookmark the result
+    GET is good for non-secure data, like query strings in Google
+
+Notes on POST:
+
+    Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+    POST has no size limitations, and can be used to send large amounts of data.
+    Form submissions with POST cannot be bookmarked
+
+-------------------- forms ------------------------
+
+form
+ -action="/action_page.php"
+ -method="get"
+ -target =
+            _blank 	The response is displayed in a new window or tab
+            _self 	The response is displayed in the current window
+            _parent 	The response is displayed in the parent frame
+            _top 	The response is displayed in the full body of the window
+            framename 	The response is displayed in a named iframe
+
+ -novalidate   
+ -autocomplete on or off.    When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
+ -enctype="multipart/form-data"        
+
+label
+ -for="fname"
+
+input
+ -type=["text" ,"submit","button","radio","checkbox","range","number","color","date","datetime-local","email","file","hidden","month","image",\
+         "password","reset","search","tel","time","url","week"," "," "," "," "," "," "," "]
+ -id="fname"
+ -name="fname" 
+ -placeholder="123-45-678"
+ -value="John"
+ -required
+ -autofocus
+ -list="browsers"
+ -checked                 for type="checkbox" or type="radio"
+ -min="1" 
+ -max="5"
+ -step="10"
+ -disabled
+ -maxlength
+ - pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+ -readonly
+ -size
 
 
 
 
+select 
+  -id="cars" 
+  -name="cars"
+  -size="3"
+  -multiple     <!--control+chose -->
+  *option
+    -value="volvo"
+    -selected
+  *optgroup 
+    -label="Swedish Cars"  
+    *option
+      -value="volvo"
+      -selected 
+
+textarea 
+ -name="message" 
+ -rows="10" 
+ -cols="30"
+
+fieldset
+ *legend
 
 
+datalist 
+  -id="browsers"
+  *option
+      -value="volvo"
 
+# https://www.w3schools.com/tags/att_input_type.asp
+# type="submit" value="Submit"
+# type="reset" value="Reset" 
+# type="range"  id="a" name="a" value="50" min="0" max="50" step="10"
+# type="number" id="b" name="b" value="50" min="0" max="100" step="10" 
+# type="date" id="datemin" name="datemin" min="2000-01-02"
+#                                         max="1979-12-31"   
+# type="datetime-local"
+# type="image" src="img_submit.gif" alt="Submit" width="48" height="48"  # work as submet
+# type="file" id="myfile" name="myfile"   multiple      #file :multiple   #To select multiple files, hold down the CTRL or SHIFT key while selecting.
+# type="hidden" id="custId" name="custId" value="3487"
+# type="number" id="quantity" name="quantity" min="1" max="5  step="10" value="30"  size="50"
+type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+--------------------------------------------
 
-
-
-
-
+      <!-- disabled =The value of a disabled input field will not be sent when submitting the form!
+                                                                                                ,readonly =The value of a read-only input field will be sent when submitting the form!
+                                                                                                size="50"
+                                                                                                required 
+                                                                                                maxlength="4"
+                                                                                                pattern="[A-Za-z]{3}" title="Three letter country code"
+                                                                                                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                                                                                                -->
 
 
 
